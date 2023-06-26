@@ -84,6 +84,8 @@ const LabelStyle = ({ title, subtitle, textBanner }: LabelProps) => {
             justifyContent: "space-between",
             padding: "0 20px",
             marginLeft: "-16px",
+            zIndex: selectedValue === item.value ? 10 : 0,
+            marginTop: "-2px",
             "&:first-of-type": {
               borderTopLeftRadius: "10px",
               borderTopRightRadius: "10px",
