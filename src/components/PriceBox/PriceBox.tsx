@@ -43,13 +43,19 @@ const LabelStyle = ({ title, subtitle, textBanner }: LabelProps) => {
           display: "flex",
           flexDirection: "column",
           marginLeft: "8px",
+          marginTop: "20px",
+          marginBottom: "22px",
         }}
       >
         <span style={{ fontSize: "24px" }}>{title}</span>
         <span style={{ color: subtitleColor, fontSize: "16px" }}>
           {subtitle}
         </span>
-        {textBanner && <HorizontalVBanner>{textBanner}</HorizontalVBanner>}
+        <div style={{
+          marginTop: '7px'
+        }}>
+          {textBanner && <HorizontalVBanner>{textBanner}</HorizontalVBanner>}
+        </div>
       </div>
     </div>
   );
