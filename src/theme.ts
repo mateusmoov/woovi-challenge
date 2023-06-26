@@ -13,6 +13,11 @@ const theme = createTheme({
       secondary: '#AFAFAF'
     }
   },
+  typography: {
+    allVariants: {
+      fontFamily: 'Nunito',
+    },
+  }
 });
 
 
