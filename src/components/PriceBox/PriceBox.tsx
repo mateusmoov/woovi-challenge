@@ -12,6 +12,7 @@ import { HorizontalVBanner } from "@/components";
 import styles from "./PriceBox.module.css";
 
 export const PriceBox = ({
+  titleLabel,
   data,
   subtitleColor = "#AFAFAF",
 }: PriceBoxProps) => {
@@ -55,7 +56,29 @@ export const PriceBox = ({
   };
 
   return (
-      <RadioGroup name="use-radio-group" sx={{ display: "inline-flex", width: "100%" }}>
+    <>
+      <Box
+        width="fit-content"
+        px="20px"
+        height="27px"
+        justifyContent="center"
+        display="flex"
+        borderRadius="100px"
+        position="relative"
+        top="14px"
+        left="31px"
+        zIndex="12"
+        sx={{
+          backgroundColor: "#E5E5E5",
+          fontWeight: "bold",
+        }}
+      >
+        {titleLabel}
+      </Box>
+      <RadioGroup
+        name="use-radio-group"
+        sx={{ display: "inline-flex", width: "100%" }}
+      >
         {data.map((item, index) => (
           <FormControlLabel
             key={index}
@@ -84,5 +107,6 @@ export const PriceBox = ({
           />
         ))}
       </RadioGroup>
+    </>
   );
 };

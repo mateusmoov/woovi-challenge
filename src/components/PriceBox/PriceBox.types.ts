@@ -6,6 +6,7 @@ export interface PriceBoxProps {
     textBanner?: string
   }>
   subtitleColor?: string
+  titleLabel: string
 }
 
 

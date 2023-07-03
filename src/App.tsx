@@ -15,9 +15,15 @@ const radioData = [
   },
 ];
   return (
-    <Container>
-      <PriceBox data={radioData} />
-    </Container>
+    <>
+      <Container>
+        <PriceBox data={radioData} titleLabel="Pix" />
+      </Container>
+
+      <Container>
+        <PriceBox data={radioData} titleLabel="Pix Parcelado" />
+      </Container>
+    </>
   );
 }
 
