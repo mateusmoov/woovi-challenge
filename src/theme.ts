@@ -17,6 +17,15 @@ const theme = createTheme({
     allVariants: {
       fontFamily: 'Nunito',
     },
+  },
+  components:{ 
+    MuiFormControlLabel: {
+      styleOverrides: {
+        root: ({theme}) => theme.unstable_sx({
+          marginLeft: 0,
+        })
+      }
+    }
   }
 });
 
